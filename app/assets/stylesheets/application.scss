@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap/scss/bootstrap";
+
+$color-one: #a34a28;
+$color-two: #dfddc7;
+$color-three: #f58b54;
+$color-four: #211717;
+
+
+a, a:hover {
+    color: $color-one;
+    text-decoration: none;
+    font-weight: normal;
+
+}
+
+a:hover {
+  color: grey;
+}

@@ -1,13 +1,16 @@
 
-<!-- path to root -->
-<%= link_to "WIKI", root_path  %>
-<!-- Add an article -->
-<%= link_to "Add an article", new_article_path %>
+
 <!-- display list of articles -->
 <div class="container">
   <% @articles.each do |article| %>
-  <h2><%= link_to article.title, article_path(article) %></h2>
-  <p><%= article.content %></p>
+    <article>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <p class="h3 bold text-body"><%= link_to article.title, article_path(article) %></p>
+          <p class="text-body"><%= article.content %></p>
+        </div>
+      </div>
+    </article>
   <% end %>
 </div>
 
